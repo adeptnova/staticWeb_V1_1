@@ -1,0 +1,268 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar css start */
+
+.nav-item .nav-link.active {
+    color: #ffffff;
+    background: #01b5f8;
+    font-weight: 700;
+    outline: 0px;
+}
+
+.navbar-toggler {
+    background: #ec6d1e;
+}
+
+.nav-link {
+    color: #01b5f8;
+    padding: 30px 15px 8px !important;
+}
+
+nav.navbar.navbar-expand-lg.bg-light {
+    padding: 0px 20px 10px 20px;
+}
+
+/* navbar css end */
+
+
+/* Home css start */
+
+#home-bg{
+    background: linear-gradient(200deg, #30318f, #00b6f8, #c2e4f6);
+    padding-top: 5rem;
+}
+
+.home-h{
+    font-weight: 700;
+    color: #2e3192;
+}
+
+.gradient-text {
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #ec6d1e, #f3ec78);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 55px;
+}
+
+#benefits {
+    background: #ec6d1e;
+    padding: 50px 50px 50px 50px;
+    color: #fff;
+}
+
+/* Home css end */
+
+/* Home about css start */
+
+.main {
+    transition: all ease .5s;
+    overflow: hidden;
+    box-shadow: 1px 20px 25px 0px rgb(188 229 249);
+}
+
+.border-card-one {
+    border-color: transparent;
+    border-left: 0.3rem solid #eb6d1e !important;
+    padding: 1rem;
+}
+
+#our-areas-of-expertise{
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.overlay{
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.box-size{
+    padding: 0 0;
+    padding-top: 0.5rem;
+    background: #FFFFFF;
+    padding: 44px 26px 20px;
+    margin-top: -29px;
+    border-bottom: 4px solid #eb6d1e;
+    text-align: left;
+    box-shadow: 1px 20px 25px 0px rgb(188 229 249);
+}
+
+.icon-design {
+    padding: 5px 15px 0px 15px;
+    width: 94px;
+    height: 94px;
+    color: #fff;
+    font-size: 42px;
+    font-size: 38px;
+    text-align: center;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 0;
+    display: inline-table;
+    background: transparent;
+    color: #ec6d1e;
+    font-style: normal !important;
+    background: #F5F5F5;
+    box-shadow: 0px 3px 0px #A2A2A2;
+}
+
+/* Home about css end */
+
+/* Home product css start */
+
+#products-home{
+    background-color: #00b5f8;
+    min-height: 43rem;
+}
+
+.product-card{
+    background-color: #2e3192;
+    padding: 32px 30px;
+    position: relative;
+    min-height: 490px;
+    max-width: 340px;
+    transition: all .3s ease-in;
+    margin-top: 0.625rem;
+    border-left: 4px solid #eb6d1e;
+}
+
+.product-card:hover{
+    background-color: #fff;
+    min-height: 510px;
+    transform: translateY(-12px);
+}
+
+.cards-wrapper__card-body__hover-image {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: transform .3s ease-in;
+    overflow: hidden;
+}
+
+.mask-image-services {
+    height: 253px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    width: 100%;
+}
+
+.product-card:hover>.cards-wrapper__card-body__hover-image {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.mask-image-services>img {
+    height: 100%;
+    width: 100%;
+}
+
+.hov_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"316\" height=\"253\" viewBox=\"0 0 316 253\" fill=\"none\"><path d=\"M-76.9403 13.0041C-71.3437 4.8635 -62.098 0 -52.2191 0H62H176.219C186.098 0 195.344 4.86351 200.94 13.0041L310.315 172.095C317.354 182.333 317.354 195.849 310.315 206.087L200.94 365.178C195.344 373.318 186.098 378.182 176.219 378.182H62H-52.2191C-62.098 378.182 -71.3437 373.318 -76.9403 365.178L-186.315 206.087C-193.354 195.849 -193.354 182.333 -186.315 172.095L-76.9403 13.0041Z\" fill=\"white\"/></svg>");
+    -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"316\" height=\"253\" viewBox=\"0 0 316 253\" fill=\"none\"><path d=\"M-76.9403 13.0041C-71.3437 4.8635 -62.098 0 -52.2191 0H62H176.219C186.098 0 195.344 4.86351 200.94 13.0041L310.315 172.095C317.354 182.333 317.354 195.849 310.315 206.087L200.94 365.178C195.344 373.318 186.098 378.182 176.219 378.182H62H-52.2191C-62.098 378.182 -71.3437 373.318 -76.9403 365.178L-186.315 206.087C-193.354 195.849 -193.354 182.333 -186.315 172.095L-76.9403 13.0041Z\" fill=\"white\"/></svg>");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+}
+
+.link-color{
+    color: #fff;
+}
+
+.product-box{
+    max-width: 340px;
+}
+
+.btn-product{
+    position: absolute;
+    bottom: 1.875rem;
+    left: 1rem;
+}
+
+.btn-product-arrow{
+    width: 64px;
+    height: 48px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    background: #eb6d1e;
+    align-items: center;
+}
+
+/* Home product css end */
+
+/* Home contact start */
+
+.contact-r form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #00b6f8;
+    padding: 15px;
+    margin: 15px 0;
+    color: #e86e22;
+}
+
+.contact-footer{
+    background: linear-gradient(160deg, #c2e4f6, #c2e4f6, #00b6f8)
+}
+
+#contact {
+    background: #30318f;
+}
+
+.border-bottom{
+    border-bottom: #ec6d1e 2px solid !important;
+}
+
+/* Home contact end */
+
+.logo-color-1{
+    color: #2e3192;
+}
+
+.text-color{
+    color: #54809f;
+}
+
+.pt-6{
+    padding-top: 6rem;
+}
+
+/* #our-areas-of-expertise{
+    -ms-zoom: 90%;
+    background-image: url("D:/AdeptNova/adeptNovaWebsite/AdeptNove_StaticWeb/images/bg-service.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 2rem;
+} */
+
+
+
+
