@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AdeptNova</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css"/>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/font-awesome.min.js"></script>
+    <script src="js/unpkg_core.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="adeptNovaNev">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="images/adeptNovaLogo.png" style="width: 185px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coming_soon.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coming_soon.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="creatio.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div id="creation-main-page" style="padding: 15rem 0 10rem 0;">
+            <img src="images/creatio_page_1.jpg" class="overlay">
+            <div class="container position-relative product-text-bg" style="width: 70%;">
+                <h1 class="text-center" style="color: #03066d;">SAP HANA</h1>
+                <p class="text-color text-center"><b>AdeptNova empowers businesses to unlock the next generation of enterprise resource planning (ERP) with expert SAP S/4HANA migration services. Our team of certified consultants will guide you through the entire migration journey, ensuring a smooth transition from SAP ECC to S/4HANA. We leverage proven methodologies and a deep understanding of your business needs to minimize downtime, optimize performance, and unlock the full potential of S/4HANA for growth.
+                </b></p>
+            </div>
+        </div>
+        <div class="container pt-6">
+            <h2 class="logo-color-1">SAP S/4HANA Readiness Assessment</h2>
+            <p class="text-color">
+                o	Current System Analysis & Health Check<br>
+o	Data Volume & Landscape Complexity Assessment<br>
+o	Migration Strategy Development (Brownfield, Greenfield, or System Conversion)<br>
+o	Cost Estimation & ROI Calculation
+                </p>
+            <br>
+            <br>
+            <h2 class="logo-color-1">SAP S/4HANA Migration Planning & Execution:</h2>
+            <p class="text-color">o	Detailed Project Planning & Resource Allocation<br>
+                o	System Configuration & Customization for S/4HANA<br>
+                o	Data Migration Strategy & Execution (Conversion, Cleansing, Archiving)<br>
+                o	System Testing & User Acceptance Testing (UAT)                
+                </p>
+            <br>
+            <br>
+            <h2 class="logo-color-1">Post-Migration Optimization & Support:</h2>
+            <p class="text-color">
+                o	Go-Live Support & System Stabilization<br>
+o	User Training & Change Management<br>
+o	Performance Monitoring & Optimization<br>
+o	Ongoing Support & Maintenance for S/4HANA
+
+                </p>
+            <br>
+            <br>
+            <h2 class="logo-color-1">Benefits to Highlight</h2>
+            <p class="text-color">•	Enhanced Performance & Real-Time Insights: Leverage the in-memory computing power of S/4HANA for faster transactions and data analysis.<br>
+                •	Simplified Data Model & Business Processes: Benefit from a streamlined data model and simplified business processes for greater efficiency.<br>
+                •	Improved User Experience: Enjoy a modern and intuitive user interface for enhanced user adoption.<br>
+                •	Future-Proof Technology: Ensure your ERP system is equipped to handle future growth and innovation with S/4HANA.<br>
+                •	Reduced Operational Costs: Achieve cost savings through optimized infrastructure and improved data management with S/4HANA.
+                
+                </p>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMBJUhe-4VWhiCR1eUj88mEPVmwn6Gqf2qwPHPXKrK7f5BhPrdtqdiptAN_-ThBCS1/exec'
+    const form = document.forms['submit-to-google-sheet']
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</html>

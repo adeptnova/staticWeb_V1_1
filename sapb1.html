@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AdeptNova</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css"/>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/font-awesome.min.js"></script>
+    <script src="js/unpkg_core.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="adeptNovaNev">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="images/adeptNovaLogo.png" style="width: 185px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coming_soon.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coming_soon.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="creatio.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div id="creation-main-page" style="padding: 15rem 0 10rem 0;">
+            <img src="images/creatio_page_1.jpg" class="overlay">
+            <div class="container position-relative product-text-bg" style="width: 70%;">
+                <h1 class="text-center" style="color: #03066d;">SAP Business One</h1>
+                <p class="text-color text-center"><b>AdeptNova empowers businesses to achieve operational excellence and unlock growth potential with expert SAP Business One (B/1) implementation services. Our certified consultants will guide you through every stage of the B/1 journey, from initial assessment and system configuration to data migration, user training, and ongoing support. We ensure your SAP B/1 system is tailored to your specific needs, delivering a powerful platform to optimize your core business processes.
+                </b></p>
+            </div>
+        </div>
+        <div class="container pt-6">
+            <h2 class="logo-color-1">SAP B/1 Needs Assessment & Planning:</h2>
+            <p class="text-color">o	Business Process Analysis & Gap Identification<br>
+                o	System Configuration & Customization Planning<br>
+                o	Project Scope Definition & Implementation Roadmap<br>
+                o	Cost-Benefit Analysis & Return on Investment (ROI) Calculation
+                
+                </p>
+            <br>
+            <br>
+            <h2 class="logo-color-1">SAP B/1 Implementation & Configuration:</h2>
+            <p class="text-color">
+                o	System Installation & Configuration<br>
+o	Data Migration & Integration with Existing Systems<br>
+o	User Interface (UI) Customization & Workflow Development<br>
+o	Security Management & User Access Controls
+
+                </p>
+            <br>
+            <br>
+            <h2 class="logo-color-1">SAP B/1 Training & Go-Live Support:</h2>
+            <p class="text-color">o	Comprehensive User Training on All B/1 Modules<br>
+                o	Change Management & User Adoption Strategies<br>
+                o	Go-Live Support & Post-Implementation Optimization
+                
+                </p>
+            <br>
+            <br>
+            <h2 class="logo-color-1">Ongoing Support & Maintenance:</h2>
+            <p class="text-color">o	System Maintenance & Upgrades<br>
+                o	24/7 Technical Support & Help Desk<br>
+                o	Advanced Reporting & Analytics Configuration
+                
+                </p>
+            <br>
+            <br>
+            <h2 class="logo-color-1">Benefits to Highlight:</h2>
+            <p class="text-color">
+                •	Enhanced Efficiency & Streamlined Operations: Automate tasks, centralize data, and gain real-time insights for better decision-making.<br>
+•	Improved Customer Relationship Management (CRM): Manage customer interactions effectively and boost customer satisfaction.<br>
+•	Inventory Optimization & Supply Chain Management: Gain real-time inventory visibility and improve forecasting accuracy.<br>
+•	Financial Management & Reporting: Streamline accounting processes and generate comprehensive financial reports.<br>
+•	Scalability & Flexibility: Adapt your SAP B/1 system as your business grows and evolves.
+
+                </p>
+            <br>
+            <br>
+            <h2 class="logo-color-1">Why Choose AdeptNova for SAP B/1 Implementation:</h2>
+            <p class="text-color">
+                •	Certified Consultants: Our team possesses deep expertise in SAP B/1 and industry best practices.<br>
+•	Tailored Solutions: We focus on understanding your unique needs and configure B/1 to optimize your business processes.<br>
+•	Proven Track Record: We have a successful history of delivering successful SAP B/1 implementations for businesses of various sizes.<br>
+•	Ongoing Support & Partnership: We offer comprehensive support throughout the entire B/1 lifecycle, ensuring you maximize the value of your investment.
+
+                </p>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMBJUhe-4VWhiCR1eUj88mEPVmwn6Gqf2qwPHPXKrK7f5BhPrdtqdiptAN_-ThBCS1/exec'
+    const form = document.forms['submit-to-google-sheet']
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</html>
