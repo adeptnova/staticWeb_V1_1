@@ -212,6 +212,26 @@ nav.navbar.navbar-expand-lg.bg-light {
 
 /* Home product css end */
 
+/* Creatio page start */
+
+#creation-main-page, .bg-img-main{
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+#creation-main-page .overlay, .bg-img-main .overlay{
+    opacity: 0.2 !important;
+}
+
+.product-text-bg{
+    background: #f2f6f7;
+    padding: 2rem;
+    opacity: 0.8;
+}
+
+/* creatio page end */
+
 /* Home contact start */
 
 .contact-r form{
