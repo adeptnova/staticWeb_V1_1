@@ -1,14 +1,14 @@
-body{
-    width: 100%;
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    background: #ebeef1;
 }
 
 /* navbar css start */
 
 .nav-item .nav-link.active {
     color: #ffffff;
-    background: #01b5f8;
+    background: #3876BF;
     font-weight: 700;
     outline: 0px;
 }
@@ -18,18 +18,41 @@ body{
 }
 
 .nav-link {
-    color: #01b5f8;
+    color: #ffffff;
     padding: 30px 15px 8px !important;
+    --bs-nav-link-hover-color:#9EC8B9 !important;
 }
 
 nav.navbar.navbar-expand-lg.bg-light {
     padding: 0px 20px 10px 20px;
 }
 
+.bg-nav-color{
+    background-color: #192655;
+}
+
+.logo-color{
+    color: white;
+    /* text-align: center; */
+    padding-left: 4rem;
+    font-size: 28px;
+}
 /* navbar css end */
 
+@media (max-width:500px) {
+    .icon-hide{
+        display: none !important;
+    }
+}
 
 /* Home css start */
+
+.top-content{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    right: 5%;
+}
 
 #home-bg{
     background: linear-gradient(200deg, #30318f, #00b6f8, #c2e4f6);
@@ -38,24 +61,25 @@ nav.navbar.navbar-expand-lg.bg-light {
 
 .home-h{
     font-weight: 700;
-    color: #2e3192;
+    color: #ffffff;
+    font-size: 3.5rem !important;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.abou-sh{
+    color: #fff; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .gradient-text {
-    background-color: #f3ec78;
-    background-image: linear-gradient(45deg, #ec6d1e, #f3ec78);
+    background-color: #9EC8B9;
+    background-image: linear-gradient(45deg, #F3F0CA);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
     font-size: 55px;
-}
-
-#benefits {
-    background: #ec6d1e;
-    padding: 50px 50px 50px 50px;
-    color: #fff;
 }
 
 /* Home css end */
@@ -65,7 +89,11 @@ nav.navbar.navbar-expand-lg.bg-light {
 .main {
     transition: all ease .5s;
     overflow: hidden;
-    box-shadow: 1px 20px 25px 0px rgb(188 229 249);
+    box-shadow: 1px 10px 15px 0px rgb(56 118 191);
+}
+
+.shadow{
+    box-shadow: 1px 10px 15px 0px rgb(56 118 191) !important;
 }
 
 .border-card-one {
@@ -78,16 +106,103 @@ nav.navbar.navbar-expand-lg.bg-light {
     overflow: hidden;
     position: relative;
     padding-bottom: 5rem;
+    height: auto !important;
 }
 
 .overlay{
-    opacity: 0.1;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    animation: zoomInOut 1.5s ease-in-out forwards;
 }
+
+.overlay-home{
+    background-image: url("images/abc3.jpg");
+}
+
+.overlay-about{
+    background-image: url("images/about.jpg");
+}
+
+.overlay-home-service{
+    background-image: url("images/home-service-bg.png");
+}
+
+.overlay-service-ai{
+    background-image: url("images/ai-consulting-top.jpg");
+}
+
+.overlay-service-dm{
+    background-image: url("images/data.jpg");
+}
+
+.overlay-service-pd{
+    background-image: url("images/software-development.jpg");
+}
+
+.overlay-service-ra{
+    background-image: url("images/automation.jpg");
+}
+
+.overlay-service-sap{
+    background-image: url("images/SAP_HANA_1.jpg");
+}
+
+.overlay-service-cloud{
+    background-image: url("images/cloud-3.webp");
+}
+
+.overlay-service-pp{
+    background-image: url("images/power-platform.webp");
+}
+
+@keyframes zoomInOut {
+    0% {
+      transform: scale(0.9); /* Start at 90% scale */
+      opacity: 0;
+    }
+
+    100% {
+      transform: scale(1); /* End at original scale */
+      opacity: 1;
+    }
+}
+
+.hexagon {
+    position: relative;
+    width: 4rem; /* Adjust width as needed */
+    height: 4rem; /* Adjust height as needed */
+    background-color: #ddd; /* Adjust background color */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); 
+    /* https://bennettfeely.com/clippy/ */
+    text-align: center;
+    line-height: 4rem; /* Ensures icon is vertically centered */
+    opacity: 0.4;
+  }
+  
+  .hexagon a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  /* Optional: Increase specificity for better control (if needed) */
+  .scrolled .hexagon i {
+    animation: fadeOut 0.5s ease forwards;
+  }
 
 .box-size{
     padding: 0 0;
@@ -97,7 +212,7 @@ nav.navbar.navbar-expand-lg.bg-light {
     margin-top: -29px;
     border-bottom: 4px solid #eb6d1e;
     text-align: left;
-    box-shadow: 1px 20px 25px 0px rgb(188 229 249);
+    box-shadow: 1px 10px 15px 0px rgb(56 118 191) !important;
 }
 
 .icon-design {
@@ -124,12 +239,12 @@ nav.navbar.navbar-expand-lg.bg-light {
 /* Home product css start */
 
 #products-home{
-    background-color: #00b5f8;
+    background-color: #3876BF;
     min-height: 43rem;
 }
 
 .product-card{
-    background-color: #2e3192;
+    background-color: #192655;
     padding: 32px 30px;
     position: relative;
     min-height: 490px;
@@ -206,23 +321,13 @@ nav.navbar.navbar-expand-lg.bg-light {
     border-radius: 30px;
     display: flex;
     justify-content: center;
-    background: #eb6d1e;
+    /* background: #eb6d1e; */
     align-items: center;
 }
 
 /* Home product css end */
 
 /* Creatio page start */
-
-#creation-main-page, .bg-img-main{
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 5rem;
-}
-
-#creation-main-page .overlay, .bg-img-main .overlay{
-    opacity: 0.2 !important;
-}
 
 .product-text-bg{
     background: #f2f6f7;
@@ -253,11 +358,11 @@ form input, form textarea{
 }
 
 .contact-footer{
-    background: linear-gradient(160deg, #c2e4f6, #c2e4f6, #00b6f8)
+    background: linear-gradient(160deg, #c2e4f6, #c2e4f6, #3876BF)
 }
 
 #contact {
-    background: #30318f;
+    background: #192655;
 }
 
 .border-bottom{
@@ -267,11 +372,13 @@ form input, form textarea{
 /* Home contact end */
 
 .logo-color-1{
-    color: #2e3192;
+   /* color: #2e3192;*/
+   color: #092635;
+   font-weight: 700;
 }
 
 .text-color{
-    color: #54809f;
+    color: #192655 !important;
 }
 
 .pt-6{
@@ -287,6 +394,49 @@ form input, form textarea{
     padding-bottom: 2rem;
 } */
 
+.banner_img_1{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    animation: zoomIn 1s ease-in-out;
+}
+    
 
+/* Services ai consulting start */
 
+.ai_consulting_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 100%;
+    padding: 0 80px;
+    color: #fff;
+}
 
+.ai-card-color-1{
+    background: #192655;
+}
+
+.ai-card-color-2{
+    background: #3876BF;
+}
+
+.ai-card-color-3{
+    background: #E1AA74;
+}
+
+.ai-card-color-4{
+    background: #F3F0CA;
+}
+
+/* Services ai consulting end */
+
+.basic-box{
+    border-bottom: 4px solid #eb6d1e;
+    /* clip-path: polygon(15% 0, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%, 0 15%); */
+    box-shadow: 2px 10px 15px 2px rgb(56 118 191) !important;
+}
