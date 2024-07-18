@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>AdeptNova</title>
+    <title>SAP HANA|AdeptNova</title>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
@@ -15,80 +15,272 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="adeptNovaNev">
-        <div class="container-fluid">
-            <img class="navbar-brand" src="images/adeptNovaLogo.png" style="width: 185px;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="coming_soon.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="coming_soon.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="creatio.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-nav-color navbar-static-top" id="adeptNovaNev">
+            <div class="container-fluid">
+                 <a class="navbar-brand logo-color" href="#">AdeptNova</a>
+                <!-- <img class="navbar-brand" src="images/adeptNovaLogo.png" style="width: 185px;"> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+    <div class="overlay overlay-service-sap">
+        <div class="top-content">
+            <h1 class="home-h">SAP HANA</h1>
+            <h2 class="abou-sh">Unlock the Next Generation of ERP with AdeptNova's SAP S/4HANA Migration Services</h2>
+            <h3 class="abou-sh">Our certified consultants guide you through a smooth transition from ECC to S/4HANA</h3>
         </div>
-    </nav>
+        <div class="hexagon icon-hide" style="top: 70%; left: 48%;">
+            <i class="fa-solid fa-angle-down"></i>
+            <a href="#what-is-creatio"></a>
+        </div>
+    </div>
     <div>
-        <div id="creation-main-page" style="padding: 15rem 0 10rem 0;">
+        <!-- <div id="creation-main-page" style="padding: 15rem 0 10rem 0;">
             <img src="images/creatio_page_1.jpg" class="overlay">
             <div class="container position-relative product-text-bg" style="width: 70%;">
                 <h1 class="text-center" style="color: #03066d;">SAP HANA</h1>
-                <p class="text-color text-center"><b>AdeptNova empowers businesses to unlock the next generation of enterprise resource planning (ERP) with expert SAP S/4HANA migration services. Our team of certified consultants will guide you through the entire migration journey, ensuring a smooth transition from SAP ECC to S/4HANA. We leverage proven methodologies and a deep understanding of your business needs to minimize downtime, optimize performance, and unlock the full potential of S/4HANA for growth.
+                <h3 class="text-center" style="color: #03066d;">Unlock the Next Generation of ERP with AdeptNova's SAP S/4HANA Migration Services</h3>
+                <p class="text-color text-center"><b>Our certified consultants guide you through a smooth transition from ECC to S/4HANA
                 </b></p>
             </div>
+        </div> -->
+        <div id="what-is-hana" class="pt-6 container">
+            <h2 class="logo-color-1 text-center fs-2">What is SAP S/4HANA?</h2>
+            <p class="text-color fs-4 text-center">SAP S/4HANA is a next-generation enterprise resource planning (ERP) system designed for large businesses. It's the successor to SAP ECC (Enterprise Central Component) and offers several key improvements:</p>
+            <div class="row p-3 gap-5">
+                <div class="col-md-5 align-self-center">
+                    <ul class="text-color fs-4">
+                        <li>Make real-time decisions with in-memory processing.</li>
+                        <li>Work smarter with a streamlined data model.</li>
+                        <li>Enjoy a user-friendly interface for better adoption.</li>
+                        <li>Stay ahead of the curve with future-proof technology.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <img class="img-fluid" src="images/sap_hana_page2.webp" />
+                </div>
+            </div>
+            <!-- <p class="pt-2 text-color text-center"><b>Consider this an elevator pitch that quickly conveys the core benefits of SAP S/4HANA.</b></p> -->
         </div>
-        <div class="container pt-6">
-            <h2 class="logo-color-1">SAP S/4HANA Readiness Assessment</h2>
-            <p class="text-color">
-                o	Current System Analysis & Health Check<br>
-o	Data Volume & Landscape Complexity Assessment<br>
-o	Migration Strategy Development (Brownfield, Greenfield, or System Conversion)<br>
-o	Cost Estimation & ROI Calculation
-                </p>
-            <br>
-            <br>
-            <h2 class="logo-color-1">SAP S/4HANA Migration Planning & Execution:</h2>
-            <p class="text-color">o	Detailed Project Planning & Resource Allocation<br>
-                o	System Configuration & Customization for S/4HANA<br>
-                o	Data Migration Strategy & Execution (Conversion, Cleansing, Archiving)<br>
-                o	System Testing & User Acceptance Testing (UAT)                
-                </p>
-            <br>
-            <br>
-            <h2 class="logo-color-1">Post-Migration Optimization & Support:</h2>
-            <p class="text-color">
-                o	Go-Live Support & System Stabilization<br>
-o	User Training & Change Management<br>
-o	Performance Monitoring & Optimization<br>
-o	Ongoing Support & Maintenance for S/4HANA
-
-                </p>
-            <br>
-            <br>
-            <h2 class="logo-color-1">Benefits to Highlight</h2>
-            <p class="text-color">•	Enhanced Performance & Real-Time Insights: Leverage the in-memory computing power of S/4HANA for faster transactions and data analysis.<br>
-                •	Simplified Data Model & Business Processes: Benefit from a streamlined data model and simplified business processes for greater efficiency.<br>
-                •	Improved User Experience: Enjoy a modern and intuitive user interface for enhanced user adoption.<br>
-                •	Future-Proof Technology: Ensure your ERP system is equipped to handle future growth and innovation with S/4HANA.<br>
-                •	Reduced Operational Costs: Achieve cost savings through optimized infrastructure and improved data management with S/4HANA.
-                
-                </p>
-            <br>
-            <br>
+        <div id="hana-rs" style="background: #bce5fa;">
+            <div class="pt-5 container">
+                <h2 class="logo-color-1 text-center">Our SAP S/4HANA Readiness Assessment: Empowering Your Smooth Transition</h2>
+                <p class="text-color text-center fs-4">AdeptNova's comprehensive Readiness Assessment provides a clear roadmap for your migration to SAP S/4HANA.  Our certified consultants will analyze your current system, assess complexities, and recommend the best migration strategy to ensure a smooth and successful transition.</p>
+                <p class="text-color"><b>Here's what our assessment covers:</b></p>
+                <div class="row p-3 gap-5">
+                    <div class="col-md-6 align-self-center">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <i class="fa-solid fa-microscope"></i>&nbsp; Current System Analysis & Health Check
+                                </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-la elledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-color">We'll thoroughly examine your existing SAP ECC system, identifying potential issues and areas for optimization.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fa-solid fa-chart-simple"></i> &nbsp;Data Volume & Landscape Complexity Assessment
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-color">We'll evaluate your data volume and the complexity of your current SAP landscape to determine potential migration challenges.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fa-solid fa-map"></i> &nbsp; Migration Strategy Development
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-color">Based on our assessment findings, we'll recommend the most suitable migration approach for your business (Brownfield, Greenfield, or System Conversion).</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fa-solid fa-calculator"></i> &nbsp; Cost Estimation & ROI Calculation
+                                </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-color">We'll provide a detailed cost estimate for your migration project, along with a projected return on investment (ROI) analysis, allowing you to make informed decisions.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-5 align-self-center">
+                        <img class="img-fluid" src="images/hana_radiness_assessment.png" />
+                    </div>
+                    <p class="pt-2 text-color text-center"><b>By investing in our Readiness Assessment, you gain a valuable head start on your S/4HANA migration journey.  Contact us today to schedule your assessment!</b></p>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div id="hana-migration">
+            <div class="pt-5 container">
+                <h2 class="logo-color-1 text-center">SAP S/4HANA Migration Planning & Execution: Your Expert Guide to Success</h2>
+                <p class="text-color">AdeptNova's proven methodology ensures a seamless and efficient migration to SAP S/4HANA. Our experienced team will meticulously plan, execute, and optimize your migration, minimizing downtime and maximizing the benefits of your new system.</p>
+                <p class="text-color"><b>Our meticulous planning and execution process includes:</b></p>
+                <div class="row p-3 gap-5">
+                    <div class="col-md-6 align-self-center">
+                        <img class="img-fluid" src="images/hana_migration.png" />
+                    </div>
+                    <div class="col-md-5 align-self-center">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOneAD">
+                                <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneAD" aria-expanded="false" aria-controls="collapseOne">
+                                    <i class="fa-solid fa-calendar-days"></i>&nbsp; Detailed Project Planning & Resource Allocation
+                                </button>
+                                </h2>
+                                <div id="collapseOneAD" class="accordion-collapse collapse" aria-la elledby="headingOneAD" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-color">We'll develop a comprehensive project plan with a clear timeline, milestones, and resource allocation to ensure a smooth and efficient migration.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwoAD">
+                                <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoAD" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fa-solid fa-gears"></i> &nbsp;System Configuration & Customization for S/4HANA
+                                </button>
+                            </h2>
+                            <div id="collapseTwoAD" class="accordion-collapse collapse" aria-labelledby="headingTwoAD" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-color">Our consultants will configure your new S/4HANA system to meet your specific business needs and optimize its functionalities.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThreeAD">
+                                <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeAD" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fa-solid fa-database"></i> &nbsp; Data Migration Strategy & Execution (Conversion, Cleansing, Archiving) 
+                                </button>
+                            </h2>
+                            <div id="collapseThreeAD" class="accordion-collapse collapse" aria-labelledby="headingThreeAD" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-color">We'll develop a customized data migration strategy, considering conversion, cleansing, and archiving strategies for optimal data quality and performance in S/4HANA.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFourAD">
+                                <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourAD" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fa-solid fa-vial-circle-check"></i> &nbsp; System Testing & User Acceptance Testing (UAT)
+                                </button>
+                                </h2>
+                                <div id="collapseFourAD" class="accordion-collapse collapse" aria-labelledby="headingFourAD" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-color">We'll conduct thorough system testing to ensure functionality and identify any potential issues before go-live. Additionally, we'll guide you through user acceptance testing (UAT) to ensure user satisfaction with the new system.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <p class="pt-2 text-color text-center"><b>We understand that migration can be complex. AdeptNova is here to guide you every step of the way, ensuring a successful transition to SAP S/4HANA.</b></p>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div id="optimization-support" style="background: #bce5fa;">
+            <div class="pt-5 container">
+                <h2 class="logo-color-1 text-center">Post-Migration Optimization & Support: Ensuring Long-Term Success with SAP S/4HANA</h2>
+                <p class="text-color">AdeptNova's commitment to your success extends beyond the initial migration. We offer comprehensive post-migration services to optimize your S/4HANA system, ensure user adoption, and maximize your return on investment.</p>
+                <p class="text-color"><b>Our dedicated support team provides:</b></p>
+                <div class="row p-3 gap-5">
+                    <div class="col-md-5 align-self-center">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOneWA">
+                                <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneWA" aria-expanded="false" aria-controls="collapseOne">
+                                    <i class="fa-solid fa-rocket"></i>&nbsp; Go-Live Support & System Stabilization
+                                </button>
+                                </h2>
+                                <div id="collapseOneWA" class="accordion-collapse collapse" aria-la elledby="headingOneWA" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-color">We'll be by your side during the go-live phase, providing real-time support and troubleshooting any issues that may arise. Our team will also work to stabilize your new system, ensuring optimal performance.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwoWA">
+                                <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoWA" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fa-solid fa-headset"></i> &nbsp;User Training & Change Management
+                                </button>
+                            </h2>
+                            <div id="collapseTwoWA" class="accordion-collapse collapse" aria-labelledby="headingTwoWA" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-color">We offer comprehensive user training programs to help your employees adapt to the new S/4HANA system and leverage its full potential. We'll also guide you through effective change management strategies to ensure user adoption and minimize disruption.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThreeWA">
+                                <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeWA" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fa-solid fa-magnifying-glass"></i> &nbsp; Performance Monitoring & Optimization
+                                </button>
+                            </h2>
+                            <div id="collapseThreeWA" class="accordion-collapse collapse" aria-labelledby="headingThreeWA" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-color">We'll continuously monitor your S/4HANA system's performance, identifying and addressing any bottlenecks or optimization opportunities. Our goal is to ensure your system runs smoothly and efficiently, delivering maximum value to your business.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFourWA">
+                                <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourWA" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fa-solid fa-wrench"></i> &nbsp; Ongoing Support & Maintenance for S/4HANA
+                                </button>
+                                </h2>
+                                <div id="collapseFourWA" class="accordion-collapse collapse" aria-labelledby="headingFourWA" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-color">We provide ongoing support and maintenance services to keep your S/4HANA system up-to-date, secure, and functioning optimally. You can rely on our expertise to address any future challenges or evolving business needs.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <img class="img-fluid" src="images/sap_hana_2.jpg" />
+                    </div>
+                    <p class="pt-2 text-color text-center"><b>Partner with AdeptNova to ensure a successful and long-lasting S/4HANA journey. Contact us today to discuss your post-migration needs!</b></p>
+                </div>
+                <br>
+            </div>
         </div>
     </div>
 </body>
